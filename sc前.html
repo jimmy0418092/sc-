@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest Mania</title>
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 引入 FontAwesome 圖示 -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* 漸層背景 */
+            color: #333;
+            padding-bottom: 40px;
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background-color: #0047AB;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            transition: box-shadow 0.3s ease;
+        }
+        section:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* 加強區塊陰影效果 */
+        }
+        h2 {
+            color: #0047AB;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: #0047AB;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background-color: #00347a;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .centered {
+            text-align: center;
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* 增加圖片之間的間距 */
+            margin: 40px 0;
+        }
+
+        .image-section img {
+            border-radius: 15px;
+            max-width: 270px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 添加頁面過渡效果 */
+        body.fade-in {
+            opacity: 0;
+            animation: fadeIn ease 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="fade-in">
+
+<header>
+    Invest Mania
+</header>
+
+<section>
+    <h2><i class="fas fa-chart-line"></i> 探索 Invest Mania 的世界</h2>
+    <p>Invest Mania 提供了強大的股票預測功能，幫助您更精確地掌握市場走勢。透過我們獨創的模型，您不僅能預測單一股票的趨勢，還能將多種股票進行比較，找到最佳的投資策略。</p>
+    <p>此外，我們的系統抓取了臺灣經濟新報（TEJ）中超過 2000 支台股標的，並以馬可夫決策鏈作為理論基礎，提供實用且直觀的可視化數據，讓您在複雜的市場環境中，能夠做出更明智的決策。</p>
+    <p>傳統的投資分析多依賴於基本面與技術面的研究，但市場的變幻莫測讓單一分析方法變得不夠應對。我們的研究目標是構建一個狀態與狀態轉移概率的模型，讓投資者能夠預測未來的市場走勢，從而獲得競爭優勢。</p>
+    
+    <!-- 圖片展示區域 -->
+    <div class="image-section">
+        <img src="https://media.istockphoto.com/id/1311598658/zh/%E7%85%A7%E7%89%87/%E5%95%86%E4%BA%BA%E4%BA%A4%E6%98%93%E7%B6%B2%E4%B8%8A%E8%82%A1%E5%B8%82%E5%9C%A8%E7%89%B9%E5%B8%83%E8%90%8A%E7%89%B9%E5%B1%8F%E5%B9%95%E6%95%B8%E4%BD%8D%E6%8A%95%E8%B3%87%E6%A6%82%E5%BF%B5.jpg?s=612x612&w=0&k=20&c=JDApz4b7k_Ud51lOb-migJDHK7Lm0mfhkQkPdzSCa8I=" >
+        <img src="https://media.istockphoto.com/id/1360521209/zh/%E7%85%A7%E7%89%87/businessman-using-a-computer-to-concept-of-fund-financial-investment-management-portfolio.jpg?s=612x612&w=0&k=20&c=Lsss1Ja-TtPo44rrXze9N355c0yjGK_Ze5ne8YZYSQE=">
+        <img src="https://media.istockphoto.com/id/1419698751/zh/%E7%85%A7%E7%89%87/data-analysis-marketing-strategy-or-statistics-by-business-development-leaders-planning-company.jpg?s=612x612&w=0&k=20&c=Lx0aJ6dywFB0eYmgXm7-sukgPjIRiVhjjxfW_N0BHvw=">
+    </div>
+
+    <div class="centered">
+        <a href="https://0bca-122-100-91-33.ngrok-free.app" class="button"><i class="fas fa-play"></i> 立即體驗 Invest Mania</a>
+    </div>
+</section>
+
+</body>
+</html>
+
